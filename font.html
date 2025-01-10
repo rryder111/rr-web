@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongolian Fonts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('images/background.jpg'); /* Add your background image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #555;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+            
+        }
+        .font-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .font-card {
+            width: 30%;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .font-card img {
+            width: 100%;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        nav {
+            background: #0056b3;
+            color: #fff;
+            padding: 10px 0;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #mongolianInput {
+            width: 100%;
+            height: 120px;
+            margin-top: 20px;
+            font-size: 16px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #mongolianPreview {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: 'MongolianFont', sans-serif; /* Replace with actual Mongolian font */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h2>Mongolian Fonts</h2>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="archive.html">Archive</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Mongolian Fonts and Language Support</h1>
+        <p>Browse, download Mongolian fonts, and learn how to use these fonts and language tools on different platforms.</p>
+
+        <!-- Font Library Section -->
+        <div id="FontLibrary">
+            <h2>Font Library</h2>
+            <p>Providing traditional and modern Mongolian fonts for download and preview. Click on a font to view samples or download.</p>
+            <div class="font-cards">
+                <!-- Font Cards -->
+                <div class="font-card">
+                    <h4>Font 1</h4>
+                    <img src="images/fonts/a1.jpg" alt="Traditional Font 1 Preview">
+                    <a href="downloads/traditional1.ttf" class="btn">Download</a>
+                </div>
+                <div class="font-card">
+                    <h4>Font 2</h4>
+                    <img src="images/fonts/a2.jpg" alt="Traditional Font 2 Preview">
+                    <a href="downloads/traditional2.ttf" class="btn">Download</a>
+                </div>
+                <div class="font-card">
+                    <h4>Font 3</h4>
+                    <img src="images/fonts/a3.jpg" alt="Modern Font 1 Preview">
+                    <a href="downloads/modern1.ttf" class="btn">Download</a>
+                </div>
+                <div class="font-card">
+                    <h4>Font 4</h4>
+                    <img src="images/fonts/a4.jpg" alt="Modern Font 2 Preview">
+                    <a href="downloads/modern2.ttf" class="btn">Download</a>
+                </div>
+                <div class="font-card">
+                    <h4>Font 5</h4>
+                    <img src="images/fonts/a5.jpg" alt="Traditional Font 3 Preview">
+                    <a href="downloads/traditional3.ttf" class="btn">Download</a>
+                </div>
+                <div class="font-card">
+                    <h4>Font 6</h4>
+                    <img src="images/fonts/a6.jpg" alt="Modern Font 3 Preview">
+                    <a href="downloads/modern3.ttf" class="btn">Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Installation Guide Section -->
+        <div id="InstallationGuide" style="margin-top: 50px;">
+            <h2>Installation Guide</h2>
+            <p>Follow the steps below to install and use Mongolian fonts and input tools.</p>
+            <div>
+                <h3>Windows System</h3>
+                <ol>
+                    <li>Download the required font from the Font Library.</li>
+                    <li>Right-click on the font file and select "Install."</li>
+                    <li>Set up the Mongolian input method in "Language Settings."</li>
+                </ol>
+
+                <h3>Mac System</h3>
+                <ol>
+                    <li>Download the required font from the Font Library.</li>
+                    <li>Double-click on the font file and click "Install Font."</li>
+                    <li>Enable Mongolian input in "System Preferences > Keyboard."</li>
+                </ol>
+
+                <h3>Mobile Devices</h3>
+                <ol>
+                    <li>Download a Mongolian keyboard app from your app store.</li>
+                    <li>Install and activate the keyboard in your device settings.</li>
+                    <li>Select Mongolian as the input method.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Language Demonstration Section -->
+        <div id="LanguageDemo" style="margin-top: 50px;">
+            <h2>Try Mongolian Script</h2>
+            <p>Type in the box below to see the Mongolian script in action:</p>
+            <textarea id="mongolianInput" placeholder="Type here..."></textarea>
+            <div id="mongolianPreview">
+                <!-- Live Preview Area -->
+                <p>Preview: <span id="previewText"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Mongolian Preview Logic
+        const inputBox = document.getElementById('mongolianInput');
+        const previewText = document.getElementById('previewText');
+
+        inputBox.addEventListener('input', () => {
+            previewText.textContent = inputBox.value;
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+    <title>Contact Us - Mongolian Culture</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="menu-par">
+                <div class="logo-par">
+                    <a href="index.html">
+                        <h2>Mongolian</h2>
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html" class="menu_hover">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="contact">
+        <div class="container">
+            <h1 style="text-align: center; color: #0056b3;">Contact Us</h1>
+            <p style="text-align: center; color: #555;">We'd love to hear from you! Reach out to us using the details below.</p>
+
+            <div style="margin-top: 40px;">
+                <h2>Contact Information</h2>
+                <p>Email: <a href="mailto:info@mongolianculture.com">info@mongolianculture.com</a></p>
+                <p>Phone: +123-456-7890</p>
+                <p>Address: 123 Mongolian Heritage Street, Ulaanbaatar, Mongolia</p>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <h2>Follow Us</h2>
+                <p>
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                </p>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <h2>Send Us a Message</h2>
+                <form action="contact_form_submit.php" method="POST" style="max-width: 600px; margin: auto;">
+                    <label for="name">Name:</label><br />
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 20px;" /><br />
+
+                    <label for="email">Email:</label><br />
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 20px;" /><br />
+
+                    <label for="message">Message:</label><br />
+                    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; margin-bottom: 20px;"></textarea><br />
+
+                    <button type="submit" style="padding: 10px 20px; background-color: #0056b3; color: #fff; border: none; cursor: pointer;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="copyright" style="text-align: center; color: #555;">© 2025 Mongolian Culture | All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

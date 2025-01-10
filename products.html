@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongolian Products</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0 15px;
+        }
+
+        nav a:hover {
+            color: #f0a500;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card-content {
+            padding: 15px;
+        }
+
+        .product-card-content h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #0056b3;
+        }
+
+        .product-card-content p {
+            margin: 10px 0 0;
+            color: #555;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #f0a500;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="container">
+            <div class="logo-par">
+                <a href="index.html">
+                    <h2>Mongolian</h2>
+                </a>
+            </div>
+            <div class="nav">
+                <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#food">Food</a></li>
+                    <li><a href="#clothing">Clothing</a></li>
+                    <li><a href="#crafts">Crafts</a></li>
+                    <li><a href="#music-and-arts">Music and Arts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容 -->
+    <div class="container">
+        <h1>Explore Mongolian Products</h1>
+        <div class="products-grid">
+            <!-- 食物模块 -->
+            <div class="product-card" id="food">
+                <img src="https://pic.rmb.bdstatic.com/bjh/241026/dump/59fb34265d5fc6ba3aa0c5578f02a181.png" alt="Mongolian Food">
+                <div class="product-card-content">
+                    <h3>Food</h3>
+                    <p>A Taste of the Nomadic Heart</p>
+                    <p>Mongolian food is a journey through the steppes, offering bold flavors like Buuz and Airag, deeply rooted in tradition.</p>
+                </div>
+            </div>
+            <!-- 服饰模块 -->
+            <div class="product-card" id="clothing">
+                <img src="https://img2.baidu.com/it/u=2737991431,1806216905&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1200" alt="Mongolian Clothing">
+                <div class="product-card-content">
+                    <h3>Clothing</h3>
+                    <p>Woven Stories of Heritage</p>
+                    <p>The traditional Del and vibrant accessories blend utility and elegance, telling stories of Mongolia's rich past.</p>
+                </div>
+            </div>
+            <!-- 手工艺模块 -->
+            <div class="product-card" id="crafts">
+                <img src="https://p4.itc.cn/q_70/images03/20221009/771f7d45f6f84e54856a9ba8797665ab.jpeg" alt="Mongolian Crafts">
+                <div class="product-card-content">
+                    <h3>Crafts</h3>
+                    <p>Echoes of Artistic Ingenuity</p>
+                    <p>Mongolian crafts, from intricate carvings to symbolic instruments like the Morin Khuur, reflect resilience and creativity.</p>
+                </div>
+            </div>
+            <!-- 音乐与艺术模块 -->
+            <div class="product-card" id="music-and-arts">
+                <img src="https://img2.baidu.com/it/u=2801571646,3585260248&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1200" alt="Mongolian Music and Arts">
+                <div class="product-card-content">
+                    <h3>Music and Arts</h3>
+                    <p>Melodies of the Vast Steppes</p>
+                    <p>The haunting sounds of Khoomei and the beauty of Thangka paintings connect Mongolia's spirit with its natural rhythms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2025 Mongolian Culture | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+
+</html>
